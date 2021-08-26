@@ -24,7 +24,7 @@ function App() {
         <Route path="/add" exact component={SupplierDetails}/>
         <Route path="/itemadd" exact component={ItemDetails}/>
         <Route path ="/itemList" exact component={ItemList}/>
-        <Route path ="/ViewItem" exact component={ViewItem}/>
+        <Route path ="/itemList/:userId" exact component={ViewItem}/>
         <Route path ="/login" exact component={Login}/>
         <Route path ="/Register" exact component={Register}/>
         
