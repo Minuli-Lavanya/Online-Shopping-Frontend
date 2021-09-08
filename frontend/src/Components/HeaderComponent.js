@@ -3,7 +3,6 @@ import React, {Component} from 'react'
 class HeaderComponent extends Component{
     constructor(props){
         super(props)
-
         this.state = {
 
         }
@@ -19,7 +18,7 @@ class HeaderComponent extends Component{
                         </button>
                         <div class="navbar-nav">
                             <div class="nav-item text-nowrap">
-                            <a class="nav-link px-3" href="#">Sign out</a>
+                            <a class="nav-link px-3" href="#">Log Out</a>
                             </div>
                         </div>
                 </header>
