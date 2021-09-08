@@ -7,6 +7,7 @@ import ItemList from './Components/ItemList';
 import ViewItem from './Components/ViewItem';
 import HeaderComponent from './Components/HeaderComponent';
 import SideBar from './Components/SideBar';
+import Dashboard from './Components/Deashboard';
 import Login from './Components/Login';
 import Register from './Components/Register';
 
@@ -27,6 +28,7 @@ function App() {
         <Route path ="/itemList/:userId" exact component={ViewItem}/>
         <Route path ="/login" exact component={Login}/>
         <Route path ="/Register" exact component={Register}/>
+        {/* <Route path ="/Dashboard" exact component={Dashboard}/> */}
         
       </div>
       
