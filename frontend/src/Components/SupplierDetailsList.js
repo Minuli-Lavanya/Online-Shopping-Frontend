@@ -1,10 +1,7 @@
-
 import React, {Component} from 'react';
 import axios from 'axios';
 import '../Styles/table.css';
 import * as AiIcon from "react-icons/ai";
-
-
 
 
 export default class SupplierDetailsList extends Component {
@@ -31,7 +28,6 @@ export default class SupplierDetailsList extends Component {
     }
 
 
- 
 
 
     render(){
