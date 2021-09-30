@@ -14,7 +14,7 @@ function Summary() {
     const [allProductSummery, setallProductSummery] = useState([]);
 
     
-
+// 
         //get product summary details
         //This useEffect function used to get all user's data
         useEffect(() => {
