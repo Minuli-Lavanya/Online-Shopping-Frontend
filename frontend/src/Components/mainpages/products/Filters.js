@@ -30,7 +30,7 @@ function Filters() {
                     }
                 </select>
             </div>
-
+            {/* search ber */}
             <input type="text" value={search} placeholder="Search here..!" 
             onChange={e => setSearch(e.target.value.toLowerCase())} />
 
