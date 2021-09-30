@@ -25,7 +25,7 @@ function Products() {
         })
         setProducts([...products])
     }
-
+//delete product
     const deleteProduct = async(id, public_id) => {
         try {
             setLoading(true)
