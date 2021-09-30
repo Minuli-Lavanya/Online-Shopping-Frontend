@@ -43,11 +43,7 @@ export default class SupplierDetailsList extends Component {
             20)});
     }
 
-    // onDelete=(id) =>{
-    //             axios.delete(`http://localhost:8070/supplier/delete/${id}`).then((res)=>{
-    //                 alert("Delete Successfully");
-    //             })
-    //         }
+    
 
     onDelete=(id) =>{
         var confirmtext;
