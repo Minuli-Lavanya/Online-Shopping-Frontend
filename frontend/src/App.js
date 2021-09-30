@@ -14,6 +14,7 @@ import Dashboard from './Components/mainpages/dashboard/Dashboard';
 import supplierUpdate from './Components/mainpages/supplierManagement/supplierUpdate';
 import ItemsReport from './Components/mainpages/supplied_ItemManagement/itemReport';
 import itemUpdate from './Components/mainpages/supplied_ItemManagement/ItemUpdate';
+import Reportsupplier from './Components/mainpages/supplierManagement/Reportsuppliertable';
 
 
 
@@ -37,6 +38,7 @@ function App() {
             <Route path ="/supupdate/:id" exact component={supplierUpdate}/>
             <Route path ="/itemReport" exact component={ItemsReport}/>
             <Route path ="/itemupdate/:id" exact component={itemUpdate}/>
+            <Route path ="/reportsupplier" exact component={Reportsupplier}/>
 
         </div>
       </Router>
