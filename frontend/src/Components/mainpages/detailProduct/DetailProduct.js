@@ -41,7 +41,7 @@ function DetailProduct() {
                     </Link> */}
                 </div>
             </div>
-
+{/*  */}
             <div>
                 <h2>Related products</h2>
                 <div className="products">

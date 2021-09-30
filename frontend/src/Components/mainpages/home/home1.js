@@ -8,7 +8,7 @@ import homeimg1 from '../../../images/homeimg2.jpg'
 
 
 
-
+// hpme page
 export default function Index() {
 
     const state = useContext(GlobalState)

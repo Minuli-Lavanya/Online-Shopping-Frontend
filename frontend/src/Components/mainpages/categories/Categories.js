@@ -33,13 +33,14 @@ function Categories() {
             alert(err.response.data.msg)
         }
     }
-
+// edit categories
     const editCategory = async (id, name) =>{
         setID(id)
         setCategory(name)
         setOnEdit(true)
     }
 
+    //delete category details
     const deleteCategory = async id =>{
         try {
             const res = await axios.delete(`/api/category/${id}`, {
