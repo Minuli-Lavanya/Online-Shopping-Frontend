@@ -33,7 +33,7 @@ function Categories() {
             alert(err.response.data.msg)
         }
     }
-
+// edit categories
     const editCategory = async (id, name) =>{
         setID(id)
         setCategory(name)
