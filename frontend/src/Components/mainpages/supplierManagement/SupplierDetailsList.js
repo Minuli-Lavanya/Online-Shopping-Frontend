@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import '../Styles/table.css';
+import '../../../Styles/table.css'
 import * as AiIcon from "react-icons/ai";
 
 

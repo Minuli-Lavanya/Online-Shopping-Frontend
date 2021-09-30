@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../Styles/sidebar.css';
+import '../../../Styles/sidebar.css';
 import * as AiIcon from "react-icons/ai";
 
 

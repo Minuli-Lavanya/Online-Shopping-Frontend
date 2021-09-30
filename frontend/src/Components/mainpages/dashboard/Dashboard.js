@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../Styles/table.css';
+import '../../../Styles/sidebar.css';
 
 export default class Dashboard extends Component {
 
