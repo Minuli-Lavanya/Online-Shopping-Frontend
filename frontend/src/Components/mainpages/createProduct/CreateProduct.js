@@ -139,6 +139,8 @@ function CreateProduct() {
                 
             </div>
 
+            
+
             <form onSubmit={handleSubmit} id="createproductform">
                 <div className="row">
                     <label htmlFor="product_id">Product ID</label>
