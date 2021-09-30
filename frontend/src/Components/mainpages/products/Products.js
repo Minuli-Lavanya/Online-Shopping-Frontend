@@ -44,7 +44,7 @@ function Products() {
             alert(err.response.data.msg)
         }
     }
-
+// delete abd check
     const checkAll = () =>{
         products.forEach(product => {
             product.checked = !isCheck
