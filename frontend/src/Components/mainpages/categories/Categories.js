@@ -40,6 +40,7 @@ function Categories() {
         setOnEdit(true)
     }
 
+    //delete category details
     const deleteCategory = async id =>{
         try {
             const res = await axios.delete(`/api/category/${id}`, {
