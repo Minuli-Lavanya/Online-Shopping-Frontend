@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import '../../../Styles/table.css'
+import '../Styles/table.css';
 import * as AiIcon from "react-icons/ai";
 
 
@@ -10,7 +10,7 @@ export default class SupplierDetailsList extends Component {
         super(props);
         this.state = {
             suppliers:[],
-            // searchId:''
+            searchId:''
             
         };
 
@@ -38,10 +38,10 @@ export default class SupplierDetailsList extends Component {
         // window.location = "/supupdate/"+id;
     }
 
-    // searchSupName(event){
-    //     this.setState({ searchId: event.target.value.substr(0,
-    //         20)});
-    // }
+    searchSupName(event){
+        this.setState({ searchId: event.target.value.substr(0,
+            20)});
+    }
 
     
 
@@ -64,12 +64,12 @@ export default class SupplierDetailsList extends Component {
     render(){
         console.log(this.state.suppliers);
 
-        // let filtersupplier_name = this.state.suppliers.filter((
-        //     supplier)=>{
-        //         return supplier.supplier_name.toLowerCase().indexOf(this.state.
-        //             searchId.toLowerCase())!==-1;
-        //     }
-        // );
+        let filtersupplier_name = this.state.suppliers.filter((
+            supplier)=>{
+                return supplier.supplier_name.toLowerCase().indexOf(this.state.
+                    searchId.toLowerCase())!==-1;
+            }
+        );
 
         
         return(
@@ -122,7 +122,9 @@ export default class SupplierDetailsList extends Component {
                                         <td>{supplier.gender}</td>
                                         <td>
 
-                                            
+                                            {/* <a className="btn btn-warning" href={`/supupdate/${supplier._id}`}>
+                                            &nbsp;Edit
+                                            </a> */}
                                             <button style={{background: "#1c3746"}} className="btn btn-secondary" onClick={(e)=>{this.updateSupplier(supplier._id)}}><AiIcon.AiOutlineEdit/></button>
                                             <button style={{background: "#24547c", marginLeft: "20px"}} className="btn btn-secondary" onClick={() =>this.onDelete(supplier._id)}><AiIcon.AiOutlineDelete/></button>
                                             
