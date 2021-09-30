@@ -2,7 +2,7 @@ import React from 'react'
 import image1 from '../../images/image6.png'
 import './welcome.css'
 
-
+// welcome page for admin and customer
 function welcome() {
     
 
