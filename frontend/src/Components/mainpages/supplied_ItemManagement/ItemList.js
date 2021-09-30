@@ -51,11 +51,7 @@ export default class ItemList extends Component {
         this.props.history.push('/itemReport');
     }
 
-    // onDelete=(id) =>{
-    //                 axios.delete(`http://localhost:8070/item/delete/${id}`).then((res)=>{
-    //                     alert("Delete Successfully");
-    //                 })
-    //             }
+    
 
     onDelete=(id) =>{
         var confirmtext;

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import '../Styles/table.css';
+import '../../../Styles/table.css';
 import * as AiIcon from "react-icons/ai";
 
 
@@ -17,6 +17,7 @@ export default class SupplierDetailsList extends Component {
         this.addSupplier = this.addSupplier.bind(this);
         this.updateSupplier = this.updateSupplier.bind(this);
         this.onDelete = this.onDelete.bind(this);
+        this.generatepdf1 = this.generatepdf1.bind(this);
     }
 
     
@@ -28,6 +29,8 @@ export default class SupplierDetailsList extends Component {
             console.log(error);
         })
     }
+
+    
 
     addSupplier(){
         this.props.history.push('/add');
@@ -43,7 +46,11 @@ export default class SupplierDetailsList extends Component {
             20)});
     }
 
-    
+    generatepdf1(){
+        this.props.history.push('/reportsupplier');
+    }
+
+
 
     onDelete=(id) =>{
         var confirmtext;
@@ -87,7 +94,7 @@ export default class SupplierDetailsList extends Component {
 
                 <div>
                     <button style={{marginLeft:1035,  background: "#072344"}} className = "btn btn-secondary" onClick={this.addSupplier}>Add Supplier Details</button>
-                    <button style={{marginLeft:10, background: "#143957"}} className="btn btn-secondary" type='submit'>Generate Report</button>
+                    <button style={{marginLeft:10, background: "#143957"}} className="btn btn-secondary" onClick={this.generatepdf1} type='submit'>Generate Report</button>
                 </div>   
                 
                 <br/>
@@ -143,98 +150,6 @@ export default class SupplierDetailsList extends Component {
     }
     
 }
-
-
-// import React, {Component} from 'react';
-// import axios from 'axios';
-
-
-// export default class SupplierDetailsList extends Component {
-
-//     constructor(props){
-//         super(props);
-//         this.state = {suppliers:[]};
-//     }
-
-//     componentDidMount(){
-//         axios.get("http://localhost:8070/supplier/").then(response=>{
-//             this.setState({suppliers:response.data})
-//         }).catch(function (error){
-//             console.log(error);
-//         })
-//     }
-
-   
-
-//     onDelete=(id) =>{
-//         axios.delete(`http://localhost:8070/supplier/delete/${id}`).then((res)=>{
-//             alert("Delete Successfully");
-
-//         })
-//     }
-
-    
-
-
-    
-
-//     render(){
-//         console.log(this.state.suppliers);
-//         return (
-//             <div>
-//                 <div>
-//                 <a className="btn btn-success" href="/pdfGenerate" style={{marginTop: "5px", marginLeft: "5px"}}>
-//                     <i className="fa fa-file-o"></i>&nbsp;Generate PDF
-//                 </a>
-//                     <input className="form-control" type="search" placeholder="Search.." name="searchQuery" style={{width:"7cm", marginLeft:"33.5cm", marginTop:"-1cm"}} />
-//                 </div>
-//                 <table className="table table-striped" id="pdfdiv" style={{marginTop:20, fontSize:"14px", backgroundColor: "white"}}>
-//                     <thead>
-//                         <tr>
-
-//                             <th>#</th>
-//                             <th>Route</th>
-//                             <th>Bus Number</th>
-//                             <th>Route From</th>
-//                             <th>Route To</th>
-//                             <th>Cost</th>
-                        
-//                         </tr>
-//                     </thead>
-//                     <tbody>
-//                         {this.state.suppliers.map((p, index)=>{
-//                             return <tr key={index}>
-//                                 <td>
-//                                     <a href={`/supplier/${p._id}`} style={{textDecoration:"none"}}>
-//                                         {index+1}
-//                                     </a> 
-//                                 </td>       
-//                                 <td>{p.supplier_id}</td>
-//                                 <td>{p.supplier_name}</td>
-//                                 <td>{p.email}</td>
-//                                 <td>{p.nic}</td>
-//                                 <td>{p.phone_number}</td>
-//                                 <td>{p.gender}</td>
-//                                 <td>
-//                                     <a className="btn btn-warning" href={`/supupdate/${p._id}`}>
-//                                         &nbsp;Edit
-//                                     </a>
-//                                     &nbsp;
-//                                     <a className="btn btn-danger" href="#" onClick={() =>this.onDelete(p._id)}>
-//                                         &nbsp;Delete
-//                                     </a>
-//                                 </td>
-
-
-//                             </tr>
-//                         })}
-//                     </tbody>
-
-//                 </table>
-//             </div>
-//         );
-//     }
-// }
 
 
 
