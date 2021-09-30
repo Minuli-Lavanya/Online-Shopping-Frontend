@@ -14,6 +14,7 @@ code {
     monospace;
 }
 
+
  body{
 height:100vh;
 width:100%;
@@ -25,6 +26,7 @@ background-attachment: fixed;
 
 .App{
   max-width: px;
+
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
@@ -44,6 +46,7 @@ button{
 }
 
 /* ---------------- Header ------------ */
+
 @import url("./Components/headers/header.css");
 
 /* ------------- Products -------------- */
@@ -67,6 +70,7 @@ button{
 
 /* ------------------- Create Product -------------- */
 @import url("./Components/mainpages/createProduct/createProduct.css");
+
 
 /* ----------------- Responsive ------------------ */
 @media (max-width: 820px){
@@ -142,4 +146,32 @@ button{
   .create_product .upload{
     margin: 20px 0;
   }
+
+}
+.forminputbtn2 {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(250, 32, 32) 0%,
+    rgb(233, 106, 106) 100%
+  );
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.forminputbtn2:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(189, 28, 28) 0%,
+    rgb(199, 4, 4) 100%
+  );
+  transition: all 0.4s ease-out;
+
 }
