@@ -31,7 +31,7 @@ function Summary() {
             getDetails();
         },[])
 
-
+            //get pdf download
        const printDocument =() =>  {  
             const input = document.getElementById('viewtable');  
             html2canvas(input)  
