@@ -14,7 +14,7 @@ function Filters() {
         setCategory(e.target.value)
         setSearch('')
     }
-
+//filter products
     return (
         <div className="filter_menu">
             <div className="row">
