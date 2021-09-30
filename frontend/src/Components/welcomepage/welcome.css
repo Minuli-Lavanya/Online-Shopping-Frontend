@@ -16,7 +16,7 @@
     animation: textAnimate 5s infinite alternate;
   
   }
-  
+  /*  */
   @keyframes textAnimate {
     0% {
       stroke-dasharray: 0 50%;
