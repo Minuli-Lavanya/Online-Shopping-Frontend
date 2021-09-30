@@ -42,10 +42,10 @@ export default class ItemList extends Component {
         this.props.history.push(`/itemList/${id}`);
     }
 
-    // searchSupName(event){
-    //     this.setState({ searchId: event.target.value.substr(0,
-    //         20)});
-    // }
+    searchSupName(event){
+        this.setState({ searchId: event.target.value.substr(0,
+            20)});
+    }
 
     generatepdf(){
         this.props.history.push('/itemReport');
