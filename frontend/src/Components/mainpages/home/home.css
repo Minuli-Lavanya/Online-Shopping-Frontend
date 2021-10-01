@@ -100,9 +100,10 @@ margin-top: 50px;
 
 #l_btn{
     border-radius: 40px 0px 0px 40px;
+    border-color: whitesmoke;
     border-right-color: rgba(0,0,0,0);
     color: white;
-    border-color: whitesmoke;
+    
 }
 
 #r_btn{
