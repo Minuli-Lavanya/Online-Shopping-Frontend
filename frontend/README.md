@@ -1,3 +1,25 @@
+Group ID: 2021S1_JUNE_WD_04
+Project Name: Online Shopping Management System 
+Group Details
+Name                                     Student ID                                     Username
+T.M.L. Bambarandage        IT19176116                                  Minuli-Lavanya  
+L.S. Gamage                         IT19382036                                  LakmaSanjula-97
+Anjali W.M.S                        IT19989242                                 Anjali-Weerasinghe
+
+Project Description
+Amigos is an online shopping platform which is to sell various products under different categories such as clothing, foot wares, accessories, cosmetics and etc. It will provide the user categories of different products to purchase in the store. In order to facilitate online purchasing, a shopping cart will be provided to the user. The system is implemented using a modern web technology.
+User friendliness is one of the main priorities of this project. Customers can easily interact with web interfaces and shop their desired items.
+Administrator is the person who manages online system. There are three main functions which are described below.
+Product Management function is an admin side function that can be used to store available product details with their relevant product categories. Key features of the function include adding the details of the product to the system, updating the details of the products with the latest information, viewing the available product details to the customers and as well as the admin. Admin can remove the product details when the product is unavailable for ordering, and this function facilitates to search the products as well. 
+Order management is a customer side function that can be used to add any available items to the cart from the shop in the required quantities. Key features of the function include adding new items to the cart, updating the list of items in the cart with necessary items and viewing the added items in the cart. Items in the cart can be deleted when necessary, and this function facilitates to search the cart list as well. Also, payment details can be added through the system and the customer will be notified via email whether the order has been confirmed or not.
+Supplier management is an admin side function that can be used to add supplier details and supplied item details. In this function admin can add supplier details, view supplier details, and if he wants he can update and delete supplier details when necessary. And also, admin can add supplied items, view supplied item list and if he wants he can update and delete supplied details. This function facilitates to search certain items in supplier item list. In the end of the month admin can generate a report of supplied item list.
+
+Technologies
+React, Node, Express, MongoDB (MERN Stack)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
