@@ -1,8 +1,11 @@
 Group ID: 2021S1_JUNE_WD_04
+
 Project Name: Online Shopping Management System 
+
 Group Details
-Name                                     Student ID                                     Username
-T.M.L. Bambarandage        IT19176116                                  Minuli-Lavanya  
+
+Name                                Student ID                                     Username
+T.M.L. Bambarandage                 IT19176116                                  Minuli-Lavanya  
 L.S. Gamage                         IT19382036                                  LakmaSanjula-97
 Anjali W.M.S                        IT19989242                                 Anjali-Weerasinghe
 
