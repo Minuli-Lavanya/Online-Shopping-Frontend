@@ -1,0 +1,30 @@
+.image{
+    position:absolute;
+    margin-top: -8cm;
+    max-width: 40cm;
+    height: 10cm;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 25cm;
+}
+#home-sec1{
+    margin-top: 4cm;
+    margin-left: 2.6cm;
+}
+#text1{
+    font-size: 60px;
+}
+#text2{
+    font-size: 90px;
+    margin-left: 3cm;
+    color: rgb(242, 208, 15);
+    font-weight: bold;
+}
+#text3{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: rgb(111, 111, 111);
+}
+
